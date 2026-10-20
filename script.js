@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // No dejar la pantalla de entrada bloqueada si las imágenes tardan.
-  window.setTimeout(hideLoader, 1800);
+  window.setTimeout(hideLoader, 2800);
   window.addEventListener("load", hideLoader, { once: true });
 
   // 2. MENÚ PARA MÓVILES
@@ -107,7 +107,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 5. AÑO AUTOMÁTICO EN EL PIE DE PÁGINA
+  // 5. FILTROS DE LA COLECCIÓN
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const carCards = document.querySelectorAll(".car-card[data-category]");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+      filterButtons.forEach((item) => item.classList.toggle("active", item === button));
+      carCards.forEach((card) => {
+        const matches = filter === "all" || card.dataset.category === filter;
+        card.classList.toggle("filtered-out", !matches);
+      });
+    });
+  });
+
+  // 6. AÑO AUTOMÁTICO EN EL PIE DE PÁGINA
   const copyright = document.querySelector(".copyright");
 
   if (copyright) {
@@ -115,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `© ${new Date().getFullYear()} · CONCEPT EXPERIENCE`;
   }
 
-  // 6. EFECTO SUTIL DEL BOTÓN DE NAVEGACIÓN
+  // 7. EFECTO SUTIL DEL BOTÓN DE NAVEGACIÓN
   const exploreButton = document.querySelector(".nav-cta");
 
   if (exploreButton) {
