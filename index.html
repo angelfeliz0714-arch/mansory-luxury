@@ -1,212 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#08090b">
-  <meta name="description" content="Una experiencia visual dedicada al universo de la personalización automotriz de lujo de MANSORY.">
-  <title>MANSORY — Beyond Luxury</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="MANSORY — una experiencia visual independiente dedicada a la personalización automotriz de lujo.">
+<title>MANSORY — Beyond Luxury</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
-
 <body>
-  <div class="loading-screen" id="loadingScreen">
-    <span>M.</span>
-    <p>ENGINEERING EXCEPTIONAL</p>
-  </div>
-
-  <header class="navbar">
-    <a href="#inicio" class="brand">MANSORY<span>.</span></a>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="#inicio">INICIO</a>
-      <a href="#coleccion">COLECCIÓN</a>
-      <a href="#venatus">VENATUS</a>
-      <a href="#filosofia">FILOSOFÍA</a>
-    </nav>
-
-    <a href="#coleccion" class="nav-cta">EXPLORE THE FLEET ↗</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-image"></div>
-      <div class="hero-shade"></div>
-
-      <div class="hero-content">
-        <p class="eyebrow"><span></span> THE ART OF AUTOMOTIVE EXCESS</p>
-        <p class="hero-kicker">NOT BUILT TO BLEND IN.</p>
-
-        <h1>BEYOND<br><span>LUXURY.</span></h1>
-
-        <p class="hero-description">
-          No seguimos los límites. Los rediseñamos.
-          Descubre un universo donde la ingeniería se convierte en arte.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#coleccion" class="button button-primary">DESCUBRIR COLECCIÓN <span>↗</span></a>
-          <a href="#venatus" class="button button-outline">EXPLORAR VENATUS</a>
-        </div>
-      </div>
-
-      <div class="hero-bottom">
-        <span>01 / AUTOMOTIVE MASTERPIECES</span>
-        <span>PRECISION · POWER · PRESENCE</span>
-        <a href="#coleccion">SCROLL TO EXPLORE ↓</a>
-      </div>
-
-      <div class="hero-number">01</div>
-    </section>
-
-    <section class="manifesto" id="filosofia">
-      <p class="eyebrow">MORE THAN MODIFICATION</p>
-      <h2>ORDINARY IS<br><span>NOT AN OPTION.</span></h2>
-      <p>
-        Una visión extraordinaria del automóvil.
-        Diseño audaz, materiales exclusivos y detalles creados
-        para transformar cada vehículo en una declaración de identidad.
-      </p>
-    </section>
-
-    <section class="collection section-padding" id="coleccion">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow"><span></span> THE COLLECTION</p>
-          <h2>ICONIC <span>MACHINES.</span></h2>
-        </div>
-        <p>Diseños que rompen las reglas.<br>Máquinas que no pasan desapercibidas.</p>
-      </div>
-
-      <div class="car-grid">
-        <article class="car-card car-card-featured" id="venatus">
-          <a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://www.mansory.com/cdn-cgi/image/format%3Davif%2Cquality%3D90/https%3A//cdn.prod.website-files.com/661d6e0d2e84ef511db18f17/68d3c6ca02a6166d1e411b94_se-hero-mb.webp"
-              alt="Lamborghini Urus personalizada por MANSORY, referencia Venatus SE"
-              loading="eager">
-            <span class="car-index">01 / THE BEAST</span>
-            <span class="image-arrow">↗</span>
-          </a>
-          <div class="car-info">
-            <div>
-              <p class="car-category">LAMBORGHINI · SUV</p>
-              <h3>URUS <span>VENATUS SE</span></h3>
-            </div>
-            <span class="car-number">01</span>
-          </div>
-          <p class="car-description">
-            Una silueta imponente, líneas agresivas y una presencia imposible de ignorar.
-          </p>
-        </article>
-
-        <article class="car-card">
-          <a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://cdn.prod.website-files.com/661d6e0d2e84ef511db18f17/69fd99c8028e81b8f5847fbb_Emperor_Signature01MOB.avif"
-              alt="Rolls-Royce Cullinan Emperor Signature de MANSORY"
-              loading="lazy">
-            <span class="car-index">02 / ROYAL PRESENCE</span>
-            <span class="image-arrow">↗</span>
-          </a>
-          <div class="car-info">
-            <div>
-              <p class="car-category">ROLLS-ROYCE · LUXURY SUV</p>
-              <h3>CULLINAN <span>EMPEROR</span></h3>
-            </div>
-            <span class="car-number">02</span>
-          </div>
-          <p class="car-description">
-            Lujo imponente reinterpretado con una identidad visual exclusiva.
-          </p>
-        </article>
-
-        <article class="car-card">
-          <a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://cdn.prod.website-files.com/661d6e0d2e84ef511db18f17/67e16cc80227f8f238cfcc35_hero-thumb-gronos.avif"
-              alt="Mercedes-Benz Clase G GRONOS de MANSORY"
-              loading="lazy">
-            <span class="car-index">03 / RAW POWER</span>
-            <span class="image-arrow">↗</span>
-          </a>
-          <div class="car-info">
-            <div>
-              <p class="car-category">MERCEDES-AMG · G-CLASS</p>
-              <h3>G-CLASS <span>GRONOS</span></h3>
-            </div>
-            <span class="car-number">03</span>
-          </div>
-          <p class="car-description">
-            Una interpretación poderosa de uno de los todoterrenos más reconocibles.
-          </p>
-        </article>
-
-        <article class="car-card">
-          <a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://www.mansory.com/cdn-cgi/image/format%3Davif%2Cquality%3D90/https%3A//cdn.prod.website-files.com/661d6e0d2e84ef511db18f17/68d3c6ca02a6166d1e411b94_se-hero-mb.webp"
-              alt="Diseño automotriz MANSORY en una SUV de lujo"
-              loading="lazy">
-            <span class="car-index">04 / EXTREME DESIGN</span>
-            <span class="image-arrow">↗</span>
-          </a>
-          <div class="car-info">
-            <div>
-              <p class="car-category">MANSORY · DESIGN</p>
-              <h3>CARBON <span>EDITION</span></h3>
-            </div>
-            <span class="car-number">04</span>
-          </div>
-          <p class="car-description">
-            La fibra de carbono y la precisión como protagonistas del diseño.
-          </p>
-        </article>
-      </div>
-
-      <div class="collection-footer">
-        <span>BUILT TO STAND APART.</span>
-        <a href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer">
-          EXPLORAR LA MARCA OFICIAL ↗
-        </a>
-      </div>
-    </section>
-
-    <section class="feature">
-      <div class="feature-image"></div>
-      <div class="feature-overlay"></div>
-      <div class="feature-content">
-        <p class="eyebrow">THE VENATUS EXPERIENCE</p>
-        <h2>POWER HAS<br><span>A NEW SHAPE.</span></h2>
-        <p>
-          Una nueva forma de interpretar el rendimiento,
-          la presencia y la exclusividad sobre cuatro ruedas.
-        </p>
-        <a href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer" class="button button-primary">
-          DESCUBRIR MANSORY <span>↗</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="closing">
-      <p class="eyebrow">THE UNEXPECTED IS THE STANDARD</p>
-      <h2>DARE TO BE<br><span>DIFFERENT.</span></h2>
-      <a href="#inicio" class="button button-outline">VOLVER AL INICIO ↑</a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a href="#inicio" class="brand">MANSORY<span>.</span></a>
-    <p>Proyecto visual independiente inspirado en la personalización automotriz de lujo.</p>
-    <a href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer">WEB OFICIAL ↗</a>
-    <span class="copyright">© 2026 · CONCEPT EXPERIENCE</span>
-  </footer>
-</body>
-</html>
+<div class="loading-screen" id="loadingScreen" aria-label="Presentación MANSORY">
+  <div class="intro-emblem"><span>M</span></div>
+  <span class="intro-wordmark">MANSORY</span>
+  <p>BEYOND LUXURY · BEYOND LIMITS</p>
+  <div class="intro-line"><i></i></div>
+</div>
+<header class="navbar">
+<a href="#inicio" class="brand">MANSORY<span>.</span></a>
+<nav class="nav-links" id="navLinks"><a href="#inicio">INICIO</a><a href="#coleccion">COLECCIÓN</a><a href="#filosofia">FILOSOFÍA</a></nav>
+<a href="#coleccion" class="nav-cta">EXPLORE THE FLEET ↗</a>
+<button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+</header>
+<main>
+<section class="hero" id="inicio">
+<div class="hero-image"></div><div class="hero-shade"></div>
+<div class="hero-content">
+<p class="eyebrow"><span></span> THE ART OF AUTOMOTIVE EXCESS</p>
+<p class="hero-kicker">NOT BUILT TO BLEND IN.</p>
+<h1>BEYOND<br><span>LUXURY.</span></h1>
+<p class="hero-description">No seguimos los límites. Los rediseñamos. Descubre un universo donde la ingeniería se convierte en arte.</p>
+<div class="hero-actions"><a href="#coleccion" class="button button-primary">DESCUBRIR COLECCIÓN <span>↗</span></a><a href="#filosofia" class="button button-outline">NUESTRA FILOSOFÍA</a></div>
+</div>
+<div class="hero-bottom"><span>01 / AUTOMOTIVE MASTERPIECES</span><span>PRECISION · POWER · PRESENCE</span><a href="#coleccion">SCROLL TO EXPLORE ↓</a></div><div class="hero-number">01</div>
+</section>
+<section class="manifesto" id="filosofia"><p class="eyebrow">MORE THAN MODIFICATION</p><h2>ORDINARY IS<br><span>NOT AN OPTION.</span></h2><p>Diseño audaz, materiales exclusivos y detalles creados para transformar cada vehículo en una declaración de identidad.</p></section>
+<section class="collection section-padding" id="coleccion">
+<div class="section-heading"><div><p class="eyebrow"><span></span> THE COLLECTION / 12 MACHINES</p><h2>ICONIC <span>MACHINES.</span></h2></div><p>Doce iconos. Una sola filosofía.<br>El lujo nunca pasa desapercibido.</p></div>
+<div class="collection-filters" role="group" aria-label="Filtrar vehículos"><button class="filter-btn active" data-filter="all">TODOS <span>12</span></button><button class="filter-btn" data-filter="suv">SUV</button><button class="filter-btn" data-filter="supercar">SUPERCARS</button><button class="filter-btn" data-filter="luxury">LUXURY</button></div>
+<div class="car-grid">
+<article class="car-card car-card-featured" data-category="suv" id="venatus"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=85" alt="SUV de lujo negra, referencia visual Urus Venatus" loading="eager"><span class="car-index">01 / THE BEAST</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">LAMBORGHINI · SUV</p><h3>URUS <span>VENATUS</span></h3></div><span class="car-number">01</span></div><p class="car-description">Una silueta imponente, líneas agresivas y presencia imposible de ignorar.</p></article>
+<article class="car-card" data-category="luxury"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=85" alt="Rolls-Royce Cullinan, referencia de lujo" loading="lazy"><span class="car-index">02 / ROYAL PRESENCE</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">ROLLS-ROYCE · SUV</p><h3>CULLINAN <span>EMPEROR</span></h3></div><span class="car-number">02</span></div><p class="car-description">Lujo imponente reinterpretado con una identidad visual exclusiva.</p></article>
+<article class="car-card" data-category="suv"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&w=1200&q=85" alt="Mercedes G-Class negra, referencia visual" loading="lazy"><span class="car-index">03 / RAW POWER</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">MERCEDES-AMG · SUV</p><h3>G-CLASS <span>GRONOS</span></h3></div><span class="car-number">03</span></div><p class="car-description">Una interpretación poderosa del todoterreno más reconocible.</p></article>
+<article class="car-card" data-category="suv"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=85" alt="Ferrari Purosangue, referencia visual" loading="lazy"><span class="car-index">04 / WILD ELEGANCE</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">FERRARI · SUV</p><h3>PUROSANGUE <span>FURY</span></h3></div><span class="car-number">04</span></div><p class="car-description">Espíritu deportivo con proporciones y carácter únicos.</p></article>
+<article class="car-card" data-category="supercar"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=1200&q=85" alt="Lamborghini Revuelto, referencia de superdeportivo" loading="lazy"><span class="car-index">05 / HYBRID BEAST</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">LAMBORGHINI · SUPERCAR</p><h3>REVUELTO <span>CARBON</span></h3></div><span class="car-number">05</span></div><p class="car-description">Tecnología híbrida y diseño radical en una máquina de alto impacto.</p></article>
+<article class="car-card" data-category="supercar"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1592198084033-ajedea6b1f2f?auto=format&fit=crop&w=1200&q=85" alt="Ferrari deportivo rojo, referencia visual" loading="lazy"><span class="car-index">06 / ITALIAN ICON</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">FERRARI · SUPERCAR</p><h3>296 GTB <span>SPECIALE</span></h3></div><span class="car-number">06</span></div><p class="car-description">La precisión italiana llevada a una estética aún más atrevida.</p></article>
+<article class="car-card" data-category="luxury"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&w=1200&q=85" alt="Coupé de lujo, referencia visual Spectre" loading="lazy"><span class="car-index">07 / SILENT POWER</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">ROLLS-ROYCE · COUPÉ</p><h3>SPECTRE <span>NOIR</span></h3></div><span class="car-number">07</span></div><p class="car-description">Elegancia silenciosa con una presencia futurista y escultórica.</p></article>
+<article class="car-card" data-category="luxury"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=85" alt="Bentley de lujo, referencia visual" loading="lazy"><span class="car-index">08 / GRAND TOURER</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">BENTLEY · LUXURY SUV</p><h3>BENTAYGA <span>ONYX</span></h3></div><span class="car-number">08</span></div><p class="car-description">Confort artesanal y potencia reunidos en una silueta imponente.</p></article>
+<article class="car-card" data-category="supercar"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85" alt="Porsche 911, referencia visual" loading="lazy"><span class="car-index">09 / PURE DRIVER</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">PORSCHE · SPORT</p><h3>911 TURBO <span>S</span></h3></div><span class="car-number">09</span></div><p class="car-description">Un icono deportivo con una actitud de alto rendimiento.</p></article>
+<article class="car-card" data-category="supercar"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=85" alt="Maserati MC20, referencia visual" loading="lazy"><span class="car-index">10 / MID-ENGINE ART</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">MASERATI · SUPERCAR</p><h3>MC20 <span>CELESTIAL</span></h3></div><span class="car-number">10</span></div><p class="car-description">Una escultura italiana pensada para dominar la carretera.</p></article>
+<article class="car-card" data-category="supercar"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=1200&q=85" alt="McLaren superdeportivo, referencia visual" loading="lazy"><span class="car-index">11 / AERODYNAMIC ART</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">MCLAREN · SUPERCAR</p><h3>750S <span>STEALTH</span></h3></div><span class="car-number">11</span></div><p class="car-description">Líneas aerodinámicas, ligereza y una estética futurista.</p></article>
+<article class="car-card" data-category="suv"><a class="car-image" href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=85" alt="Pickup de diseño robusto, referencia visual Cybertruck" loading="lazy"><span class="car-index">12 / FUTURE FORM</span><span class="image-arrow">↗</span></a><div class="car-info"><div><p class="car-category">TESLA · PICKUP</p><h3>CYBERTRUCK <span>APEX</span></h3></div><span class="car-number">12</span></div><p class="car-description">Geometría radical y una visión futurista de la movilidad.</p></article>
+</div>
+<div class="collection-footer"><span>BUILT TO STAND APART.</span><a href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer">EXPLORAR LA MARCA OFICIAL ↗</a></div>
+</section>
+<section class="feature"><div class="feature-image"></div><div class="feature-overlay"></div><div class="feature-content"><p class="eyebrow">THE VENATUS EXPERIENCE</p><h2>POWER HAS<br><span>A NEW SHAPE.</span></h2><p>Una nueva forma de interpretar el rendimiento, la presencia y la exclusividad sobre cuatro ruedas.</p><a href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer" class="button button-primary">DESCUBRIR MANSORY <span>↗</span></a></div></section>
+<section class="closing"><p class="eyebrow">THE UNEXPECTED IS THE STANDARD</p><h2>DARE TO BE<br><span>DIFFERENT.</span></h2><a href="#inicio" class="button button-outline">VOLVER AL INICIO ↑</a></section>
+</main>
+<footer class="footer"><a href="#inicio" class="brand">MANSORY<span>.</span></a><p>Proyecto visual independiente inspirado en la personalización automotriz de lujo. No afiliado oficialmente a MANSORY.</p><a href="https://www.mansory.com/" target="_blank" rel="noopener noreferrer">WEB OFICIAL ↗</a><span class="copyright">© 2026 · CONCEPT EXPERIENCE</span></footer>
+</body></html>
